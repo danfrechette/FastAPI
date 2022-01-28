@@ -7,3 +7,19 @@ SELECT l.*, COUNT(r.post_id) AS votes
 FROM posts_alchemy AS l LEFT JOIN votes AS r ON l.id = r.post_id 
 WHERE post_id = 29
 GROUP BY l.id;
+
+
+
+ec2-3-222-49-168.compute-1.amazonaws.com
+Database
+d2tejd8i6r55co
+User
+bnyfckrprbiolh
+Port
+5432
+Password
+05f12e73b946dc571d10e6656edc2f6229f6e86e179f7fd2647dabe44e9fcbe5
+URI
+postgres://bnyfckrprbiolh:05f12e73b946dc571d10e6656edc2f6229f6e86e179f7fd2647dabe44e9fcbe5@ec2-3-222-49-168.compute-1.amazonaws.com:5432/d2tejd8i6r55co
+Heroku CLI
+heroku pg:psql postgresql-round-26677 --app fastapi-dfrechet
