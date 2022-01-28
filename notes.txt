@@ -1,0 +1,9 @@
+To create a vertual enviorment:   py -3 -m venv venv 
+Activate Vertural enviorment: .\venv\scripts\activate
+
+uvicorn main:app --reload
+
+SELECT l.*, COUNT(r.post_id) AS votes
+FROM posts_alchemy AS l LEFT JOIN votes AS r ON l.id = r.post_id 
+WHERE post_id = 29
+GROUP BY l.id;
